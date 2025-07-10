@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/* Summernote Editor Custom Styling */
+.note-editor.note-frame {
+  border-radius: 0.5rem;
+  border-color: var(--gray-300) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.note-editor .note-toolbar {
+  background-color: var(--gray-50) !important;
+  border-bottom: 1px solid var(--gray-200) !important;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  padding: 0.5rem !important;
+}
+
+.note-editor .note-statusbar {
+  background-color: var(--gray-50) !important;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.note-editor .note-editing-area {
+  background-color: var(--white);
+}
+
+.note-editor .note-editing-area .note-editable {
+  padding: 1.5rem !important;
+  min-height: 400px !important;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--gray-800);
+}
+
+/* Legal document specific styles */
+.note-editable h1, .note-editable h2, .note-editable h3 {
+  font-family: 'Georgia', serif;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--gray-800);
+}
+
+.note-editable h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.note-editable h2 {
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.note-editable h3 {
+  font-size: 1.1rem;
+  margin-top: 1.25rem;
+}
+
+.editor-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ProseMirror {
+  border: 1px solid #ddd;
+  min-height: 400px;
+  padding: 15px;
+  border-radius: 5px;
+  background: white;
+}
+
+.ai-assistant {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ai-assistant input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
