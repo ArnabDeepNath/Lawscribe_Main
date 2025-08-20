@@ -5,5 +5,5 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(),tailwindcss(),],
-  base: '/Lawscribe/', // <= This MUST match your GitHub repo name
+  base: '/Lawscribe_Main/', // <= This MUST match your GitHub repo name
 })

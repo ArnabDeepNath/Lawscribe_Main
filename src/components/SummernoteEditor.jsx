@@ -36,10 +36,9 @@ const SummernoteEditor = () => {
       const selectedText = $('#summernote').summernote('code');
       const prompt = `Generate a professional ${documentType} legal document based on this input. Only respond with a clear and properly formatted legal draft. Do not add explanations. Draft: ${selectedText}`;
 
-      const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+      const response = await fetch('https://lawscribe.arnabdeepnath.workers.dev/', {
         method: 'POST',
         headers: {
-          Authorization: `Bearer ${import.meta.env.VITE_OPENROUTER_API_KEY}`,
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
